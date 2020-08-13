@@ -1,0 +1,40 @@
+{
+  "name": "egg-api",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "egg-bin dev",
+    "debug": "egg-bin debug",
+    "dev_db": "egg-sequelize-auto -o ./app/model -h 127.0.0.1 -p 3306 -d library -u root -x 123456 -e mysql",
+    "test_db": "egg-sequelize-auto -o ./app/model -h 127.0.0.1 -p 3306 -d test_library -u root -x 123456 -e mysql",
+    "pord_db": "egg-sequelize-auto -o ./app/model -h 175.24.36.114 -p 3306 -d library -u root -x 123456 -e mysql",
+    "start": "egg-scripts start --port=7001 --daemon --title=egg-server-showcase --ignore-stderr",
+    "stop": "egg-scripts stop"
+  },
+  "keywords": [
+    "egg",
+    "node",
+    "swagger"
+  ],
+  "author": "xxx",
+  "license": "MIT",
+  "dependencies": {
+    "co": "^4.6.0",
+    "common-bin": "^2.8.2",
+    "debug": "^4.1.1",
+    "egg": "^2.24.0",
+    "egg-cors": "^2.2.2",
+    "egg-scripts": "^2.11.1",
+    "egg-sequelize": "^5.2.0",
+    "egg-swagger-doc": "^2.3.2",
+    "egg-validate": "^2.0.2",
+    "ms": "^2.1.2",
+    "mysql2": "^1.7.0"
+  },
+  "devDependencies": {
+    "egg-bin": "^4.14.0",
+    "egg-sequelize-auto": "^0.1.1",
+    "mysql2": "^1.7.0",
+    "sequelize-cli": "^6.2.0"
+  }
+}

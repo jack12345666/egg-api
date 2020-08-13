@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "root",
+    "password": "123456",
+    "database": "library",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "timezone": "+08:00"
+  },
+  "test": {
+    "username": "root",
+    "password": "123456",
+    "database": "test_library",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "timezone": "+08:00"
+  },
+  "production": {
+    "username": "root",
+    "password": "A1030wang*pwd!*.Z",
+    "database": "library",
+    "host": "175.24.36.114",
+    "dialect": "mysql",
+    "timezone": "+08:00"
+  }
+}
